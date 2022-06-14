@@ -51,8 +51,16 @@ public class EnemyHealthBar : MonoBehaviour
       return health / maxHealth;
    }
 
-   private void OnMouseDown()
+  /* private void OnMouseDown()
    {
       health -= 10;
+   }*/
+
+   private void OnCollisionEnter(Collision collision)
+   {
+      if (collision.transform.tag == "spraycans")
+      {
+         health -= 10;
+      }
    }
 }
