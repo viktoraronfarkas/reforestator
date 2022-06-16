@@ -62,5 +62,20 @@ public class EnemyHealthBar : MonoBehaviour
       {
          health -= 10;
       }
+      
+      /*if(collision.transform.tag == "Enemy")
+      {
+         health -= 40;
+      }*/
+   }
+   
+   private void OnTriggerEnter(Collider other)
+   {
+      if (other.transform.tag == "Enemy")
+      {
+         //gameObject.SetActive(false);
+         health -= 40;
+         Debug.Log("planted area collision");
+      }
    }
 }
