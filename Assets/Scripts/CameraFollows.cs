@@ -16,7 +16,7 @@ public class CameraFollows : MonoBehaviour
     public float smoothFactor = 0.5f;
     
     // Check weather the camera looked at the player or not 
-    public bool lookAtTarget = true;
+    public bool lookAtTarget = false;
     
     
     
