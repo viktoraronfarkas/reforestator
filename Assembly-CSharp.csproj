@@ -53,13 +53,15 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Diamond.cs" />
+     <Compile Include="Assets\Scripts\SprayCans.cs" />
+     <Compile Include="Assets\Scripts\Shooting.cs" />
      <Compile Include="Assets\Scripts\CollectedCoins.cs" />
      <Compile Include="Assets\Scripts\EnemyHealthBar.cs" />
      <Compile Include="Assets\Scripts\PlayerMovment.cs" />
      <Compile Include="Assets\Scripts\DisplayScore.cs" />
      <Compile Include="Assets\Scripts\CameraFollows.cs" />
-     <Compile Include="Assets\Scripts\Shooting.cs" />
-     <Compile Include="Assets\Scripts\SprayCans.cs" />
+     <Compile Include="Assets\Scripts\EnemyRandomMovment.cs" />
+     <Compile Include="Assets\Scripts\PlantedAreaCollision.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />

@@ -38,9 +38,6 @@ public class PlayerMovment : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // Camera following the player 
-       // followCamera.transform.position = playerRb.position + m_CameraPos;
-        
         // Get player input
         forwardInput = Input.GetAxis("Vertical");
         horizontalInput = Input.GetAxis("Horizontal");
