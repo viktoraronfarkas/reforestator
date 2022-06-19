@@ -1,11 +1,14 @@
 fileFormatVersion: 2
-guid: bbe4e643f3a3b4e61ab96fbd4e43eb75
+guid: 1ce1e97461a7b458994d85c8af756bc0
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable:
   - first:
-      74: 2506759121109181675
-    second: Armature|0Pose
+      74: -4449717305648701825
+    second: Armature|0TPose
+  - first:
+      74: 885944232402757753
+    second: Armature|Action
   - first:
       74: -8945691123924629249
     second: Armature|Idle
@@ -13,38 +16,44 @@ ModelImporter:
       74: 8349542763059015795
     second: Armature|Walk
   - first:
-      74: -6544428077046268240
-    second: Armature|Walk.001
-  - first:
-      74: -236022367644965580
-    second: Armature|Idle (1)
-  - first:
       74: 3800721468275536773
     second: Armature|Walk (1)
-  - first:
-      74: 2667949614841947897
-    second: Walk
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Baby Blue
+    second: {fileID: 2100000, guid: 5cd75e289edb648f3998a9d61074f81a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Black
-    second: {fileID: 2100000, guid: 807bad686807f40ff9638a5454a20153, type: 2}
+    second: {fileID: 2100000, guid: 6f9915098c6064c76859059615b78990, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Eyes _ Red
-    second: {fileID: 2100000, guid: cc99853b21b3a496db9621a6970b2962, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Gray Legs
-    second: {fileID: 2100000, guid: 417a3229feec2470bb6f3aa0bafc1052, type: 2}
+      name: Blue Jeans
+    second: {fileID: 2100000, guid: 19e9b9dcb7add4eacbb36c1c3343f283, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Orange
-    second: {fileID: 2100000, guid: ad884e919b9cb48e6a8fffb67f30e5d5, type: 2}
+    second: {fileID: 2100000, guid: 43a8d11f0231d4fbf95dfc9d71c35b42, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Skin
+    second: {fileID: 2100000, guid: 968820f97eadf457ea06d6897b1ba34f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Yellow.001
+    second: {fileID: 2100000, guid: 74e90f93a4e7b441992b629af0831c4e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: white
+    second: {fileID: 2100000, guid: 8c59677351a7942e0b7ecc131f8804bb, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -73,8 +82,8 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Armature|0Pose
-      takeName: Armature|0Pose
+      name: Armature|0TPose
+      takeName: Armature|0TPose
       internalID: 0
       firstFrame: 0
       lastFrame: 1
@@ -102,11 +111,11 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Armature|Idle
-      takeName: Armature|Idle
+      name: Armature|Walk (1)
+      takeName: Armature|Walk
       internalID: 0
       firstFrame: 0
-      lastFrame: 61
+      lastFrame: 27
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -115,6 +124,35 @@ ModelImporter:
       hasAdditiveReferencePose: 0
       loopTime: 1
       loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|Idle
+      takeName: Armature|Idle
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 239
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
       loopBlendPositionXZ: 0
@@ -135,44 +173,15 @@ ModelImporter:
       takeName: Armature|Walk
       internalID: 0
       firstFrame: 0
-      lastFrame: 1
+      lastFrame: 27
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 1
-      loopBlend: 1
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask: []
-      maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
-    - serializedVersion: 16
-      name: Walk
-      takeName: Walk
-      internalID: 0
-      firstFrame: 0
-      lastFrame: 26
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 1
-      loopBlend: 1
+      loopTime: 0
+      loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
       loopBlendPositionXZ: 0

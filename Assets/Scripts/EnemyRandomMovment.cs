@@ -57,7 +57,5 @@ public class EnemyRandomMovment : MonoBehaviour
 
         // Where the enemy should go
         nav.SetDestination(Target);
-
-        animator.SetBool("isWalking", true);
     }
 }
