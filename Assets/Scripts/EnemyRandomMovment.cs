@@ -6,8 +6,8 @@ using Random = UnityEngine.Random;
 
 public class EnemyRandomMovment : MonoBehaviour
 {
-   
-    // Global Varibales 
+
+    // Global Varibales
 
     public float timer;
 
@@ -18,12 +18,14 @@ public class EnemyRandomMovment : MonoBehaviour
     public NavMeshAgent nav;
 
     public Vector3 Target;
-    
-    
+
+    public Animator animator;
+
+
     // Start is called before the first frame update
     void Start()
     {
-         // Assign NavMeshAgent 
+         // Assign NavMeshAgent
          nav = gameObject.GetComponent<NavMeshAgent>();
     }
 
@@ -34,28 +36,28 @@ public class EnemyRandomMovment : MonoBehaviour
         if (timer >= newtarget)
         {
             newTarget();
-            
-            // reset timer 
+
+            // reset timer
             timer = 0;
         }
     }
 
     void newTarget()
     {
-        // Get x , z positions 
+        // Get x , z positions
         float xPosition = gameObject.transform.position.x;
         float zPosition = gameObject.transform.position.z;
-        
-        // New x,z postions 
+
+        // New x,z postions
         float newXPosition = xPosition + Random.Range(xPosition - 50, xPosition + 50);
         float newZPosition = zPosition + Random.Range(zPosition - 50, zPosition + 50);
-        
-        // New Target 
+
+        // New Target
         Target = new Vector3(newXPosition, gameObject.transform.position.y, newZPosition);
-        
-        // Where the enemy should go 
+
+        // Where the enemy should go
         nav.SetDestination(Target);
 
-
+        animator.SetBool("isWalking", true);
     }
 }
