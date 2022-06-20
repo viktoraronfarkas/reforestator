@@ -1573,7 +1573,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 112
+  m_Constraints: 116
   m_CollisionDetection: 0
 --- !u!114 &507774247
 MonoBehaviour:
@@ -1606,6 +1606,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.0087476, y: 5.187687, z: 1.9233698}
   m_Center: {x: 0.027165512, y: 2.5980175, z: -0.16079733}
+--- !u!114 &507774249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 507774244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24b704687f8f98e4484da75606346b8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onItemCollected:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!95 &507774250
 Animator:
   serializedVersion: 3
@@ -1642,7 +1657,24 @@ CharacterController:
   m_StepOffset: 0.3
   m_SkinWidth: 0.0001
   m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 1.22, z: 0}
+  m_Center: {x: 0, y: 2.57, z: 0}
+--- !u!114 &507774252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 507774244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: defb0ab1e1daa45328c7da002058e1d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objects:
+  - {fileID: 0}
+  - {fileID: 0}
+  objNum: 0
+  objCount: 0
 --- !u!1001 &635703082
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1760,7 +1792,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timer: 0
-  newtarget: 0
+  newtarget: 5
   speed: 0
   nav: {fileID: 635703089}
   Target: {x: 0, y: 0, z: 0}
