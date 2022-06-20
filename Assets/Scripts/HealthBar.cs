@@ -63,7 +63,6 @@ public class HealthBar : MonoBehaviour
          health -= 10;
       }
       
-      
       if (collision.transform.tag == "Enemy")
       {
          //gameObject.SetActive(false);
