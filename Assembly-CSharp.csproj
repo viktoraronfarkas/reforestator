@@ -52,6 +52,7 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\DogMovement.cs" />
      <Compile Include="Assets\Scripts\Diamond.cs" />
      <Compile Include="Assets\Scripts\SprayCans.cs" />
      <Compile Include="Assets\Scripts\Shooting.cs" />
@@ -60,13 +61,9 @@
      <Compile Include="Assets\Scripts\PlayerMovment.cs" />
      <Compile Include="Assets\Scripts\DisplayScore.cs" />
      <Compile Include="Assets\Scripts\CameraFollows.cs" />
-     <Compile Include="Assets\Scripts\EnemyRandomMovment.cs" />
+     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
      <Compile Include="Assets\VoxelAnimals\Assets\Scripts\PlayerController.cs" />
-     <Compile Include="Assets\Scripts\DogMovement.cs" />
-     <Compile Include="Assets\100 People - Animated Characters Pack\5.Scripts\character_Ctrl.cs" />
-     <Compile Include="Assets\100 People - Animated Characters Pack\README.cs" />
-
-     <None Include="Assets\Assets_DevilsWorkShop\Low_Poly_Pixel_2D_Blocks_DevilsWorkShop_v04\License.txt" />
+     <Compile Include="Assets\Scripts\EnemyRandomMovment.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
@@ -657,8 +654,14 @@
  <Reference Include="System.Xml.Serialization">
  <HintPath>C:/Program Files/Unity 2020.3.32f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
  </Reference>
+ <Reference Include="Cinemachine">
+ <HintPath>E:/bcc-fourth-semester/CCL4/reforestator/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
+ </Reference>
  <Reference Include="Unity.VSCode.Editor">
  <HintPath>E:/bcc-fourth-semester/CCL4/reforestator/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="com.unity.cinemachine.editor">
+ <HintPath>E:/bcc-fourth-semester/CCL4/reforestator/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>E:/bcc-fourth-semester/CCL4/reforestator/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>

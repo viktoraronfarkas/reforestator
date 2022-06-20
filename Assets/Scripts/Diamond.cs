@@ -5,14 +5,24 @@ using UnityEngine;
 
 public class Diamond : MonoBehaviour
 {
-    private void OnTriggerEnter(Collider other)
-    {
-        CollectedCoins collectedCoins = other.GetComponent<CollectedCoins>();
+    [SerializeField] private Vector3 rotationAngle;
+    [SerializeField] private float rotationSpeed;
+    
 
-        if (collectedCoins != null)
-        {
-            collectedCoins.DiamondCollected();
-            gameObject.SetActive(false);
-        }
+    
+     void Update()
+    {
+        transform.Rotate(rotationAngle * rotationSpeed * Time.deltaTime);
     }
+     
+     private void OnTriggerEnter(Collider other)
+     {
+         CollectedCoins collectedCoins = other.GetComponent<CollectedCoins>();
+
+         if (collectedCoins != null)
+         {
+             collectedCoins.DiamondCollected();
+             gameObject.SetActive(false);
+         }
+     }
 }
