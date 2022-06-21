@@ -175,7 +175,7 @@ GameObject:
   - component: {fileID: 5609519377328861818}
   m_Layer: 0
   m_Name: flower
-  m_TagString: Untagged
+  m_TagString: collectableFlower
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -209,7 +209,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6945923381816597902}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.17041016, y: 0.29936522, z: 0.22642338}
@@ -228,9 +228,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationAngle: {x: 0, y: 10, z: 0}
   rotationSpeed: 10
-  floatSpeed: 0
-  floatRate: 100
-  floatTimer: 0
 --- !u!1 &7433730899755995835
 GameObject:
   m_ObjectHideFlags: 0
