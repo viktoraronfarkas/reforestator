@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -28,43 +27,25 @@ public class PlayerMovment : MonoBehaviour
     // Check if the player is on the ground 
     public bool isOnGround = true;
     
-    // Camera follow the player
-    //public Camera followCamera;
-
-    // Camera Position
-    //private Vector3 m_CameraPos;
-    
-    
-    
     
     // Start is called before the first frame update
     void Start()
     {
         // Access the rigid body 
         playerRb = GetComponent<Rigidbody>();
-        
-        // Get camera position 
-        //m_CameraPos = followCamera.transform.position - transform.position;
-
     }
 
     // Update is called once per frame
     void Update()
     {
-        // Camera following the player 
-       // followCamera.transform.position = playerRb.position + m_CameraPos;
-        
         // Get player input
         forwardInput = Input.GetAxis("Vertical");
         horizontalInput = Input.GetAxis("Horizontal");
 
+        // Move the player
         Vector3 movmentDirection = new Vector3(horizontalInput, 0, forwardInput);
         movmentDirection.Normalize();
-        
-        // Move the player forward 
-        //transform.Translate(Vector3.forward * Time.deltaTime * speed * forwardInput);
-        //transform.Translate(Vector3.right * Time.deltaTime * speed * horizontalInput);
-        
+
         // change the position based on the movement direction 
         transform.Translate(movmentDirection * speed * Time.deltaTime,Space.World);
         
@@ -86,11 +67,7 @@ public class PlayerMovment : MonoBehaviour
             playerRb.AddForce(Vector3.up * jumpForce,ForceMode.Impulse);
             isOnGround = false;
         }
-        
-       
     }
-    
-
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Ground"))
