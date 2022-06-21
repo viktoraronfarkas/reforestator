@@ -11,19 +11,23 @@ public class HealthBar : MonoBehaviour
 
    public GameObject healthBarUI;
    public Slider slider;
+   
+   // Start is called before the first frame update
+   void Start()
+   {
 
-
+      //_cam = Camera.main;
+      health = maxHealth;
+      slider.value = CalculateHealth();
+   }
+   
+   
    public void updateHealthBar(float maxHealth ,float currentHealth)
    {
       slider.value = currentHealth / maxHealth;
    }
    
-   // Start is called before the first frame update
-   void Start()
-   {
-      health = maxHealth;
-      slider.value = CalculateHealth();
-   }
+  
    
    
    // Update is called once per frame
@@ -50,12 +54,7 @@ public class HealthBar : MonoBehaviour
    {
       return health / maxHealth;
    }
-
-  /* private void OnMouseDown()
-   {
-      health -= 10;
-   }*/
-
+   
    private void OnCollisionEnter(Collision collision)
    {
       if (collision.transform.tag == "spraycans")
@@ -65,24 +64,7 @@ public class HealthBar : MonoBehaviour
       
       if (collision.transform.tag == "Enemy")
       {
-         //gameObject.SetActive(false);
          health -= 40;
-         Debug.Log("planted area collision");
       }
-      
-      /*if(collision.transform.tag == "Enemy")
-      {
-         health -= 40;
-      }*/
    }
-   
-   /*private void OnTriggerEnter(Collider other)
-   {
-      if (other.transform.tag == "Enemy")
-      {
-         //gameObject.SetActive(false);
-         health -= 40;
-         Debug.Log("planted area collision");
-      }
-   }*/
 }

@@ -53,7 +53,7 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\DogMovement.cs" />
-     <Compile Include="Assets\Scripts\Diamond.cs" />
+     <Compile Include="Assets\Scripts\CollectableFlowers.cs" />
      <Compile Include="Assets\Scripts\SetTimer.cs" />
      <Compile Include="Assets\Scripts\SprayCans.cs" />
      <Compile Include="Assets\Scripts\Shooting.cs" />
@@ -69,6 +69,8 @@
      <Compile Include="Assets\Scripts\MainMenu\ClickQuit.cs" />
      <Compile Include="Assets\VoxelAnimals\Assets\Scripts\PlayerController.cs" />
      <Compile Include="Assets\Scripts\EnemyRandomMovment.cs" />
+     <Compile Include="Assets\Scripts\LookAtCamera.cs" />
+     <Compile Include="Assets\Scripts\plantedAreaHealthBar.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />

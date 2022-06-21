@@ -6,6 +6,8 @@ using UnityEngine;
 public class SetTimer : MonoBehaviour
 {
     [SerializeField] private TimerLogic timer1;
+    
+    //[SerializeField] private float 
     // Start is called before the first frame update
     void Start()
     {
@@ -18,7 +20,7 @@ public class SetTimer : MonoBehaviour
     {
         if (timer1.timeIsRunning == false)
         {
-            timer1.SetDuration(10).Begin();
+            timer1.SetDuration(60).Begin();
         }
     }
 }

@@ -7,7 +7,7 @@ using Random = UnityEngine.Random;
 public class EnemyRandomMovment : MonoBehaviour
 {
    
-    // Global Varibales 
+    // Global Variables 
 
     public float timer;
 
@@ -55,7 +55,8 @@ public class EnemyRandomMovment : MonoBehaviour
         
         // Where the enemy should go 
         nav.SetDestination(Target);
-
-
+        
     }
+    
+    
 }
