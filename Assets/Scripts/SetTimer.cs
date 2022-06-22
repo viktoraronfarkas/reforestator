@@ -7,7 +7,6 @@ public class SetTimer : MonoBehaviour
 {
     [SerializeField] private TimerLogic timer1;
     
-    //[SerializeField] private float 
     // Start is called before the first frame update
     void Start()
     {

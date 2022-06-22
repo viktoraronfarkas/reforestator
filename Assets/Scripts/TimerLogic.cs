@@ -11,10 +11,7 @@ public class TimerLogic : MonoBehaviour
     [SerializeField] private Text timerText;
 
     public bool timeIsRunning = false;
-    
-    
-    
-    
+
     // Update is called once per frame
     void Update()
     {

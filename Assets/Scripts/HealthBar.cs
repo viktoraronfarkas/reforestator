@@ -6,7 +6,7 @@ using  UnityEngine.UI;
 
 public class HealthBar : MonoBehaviour
 {
-   public float health;
+   public float health = 100;
    public float maxHealth;
 
    public GameObject healthBarUI;
@@ -61,10 +61,10 @@ public class HealthBar : MonoBehaviour
       {
          health -= 10;
       }
-      
-      if (collision.transform.tag == "Enemy")
-      {
-         health -= 40;
-      }
+   }
+
+   public void reduceHealth()
+   {
+      health -= 40;
    }
 }
