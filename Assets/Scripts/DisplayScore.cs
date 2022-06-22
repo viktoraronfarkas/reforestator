@@ -18,7 +18,7 @@ public class DisplayScore : MonoBehaviour
     public void UpdateItemText(CollectedCoins collectedCoins)
     {
         // Set the text to the number of collected items
-        scoreText.text = collectedCoins.NumOfDiamonds.ToString();
+        scoreText.text = collectedCoins.NumOfFlowers.ToString();
     }
 
  
