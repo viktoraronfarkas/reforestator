@@ -53,16 +53,21 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\DogMovement.cs" />
-     <Compile Include="Assets\Scripts\Diamond.cs" />
+     <Compile Include="Assets\Scripts\CollectableFlowers.cs" />
+     <Compile Include="Assets\Scripts\SetTimer.cs" />
      <Compile Include="Assets\Scripts\SprayCans.cs" />
      <Compile Include="Assets\Scripts\Shooting.cs" />
+     <Compile Include="Assets\Scripts\TimerLogic.cs" />
      <Compile Include="Assets\Scripts\CollectedCoins.cs" />
      <Compile Include="Assets\Scripts\HealthBar.cs" />
      <Compile Include="Assets\Scripts\PlayerMovment.cs" />
+     <Compile Include="Assets\Scripts\plantedAreaHealthBar.cs" />
      <Compile Include="Assets\Scripts\DisplayScore.cs" />
      <Compile Include="Assets\Scripts\CameraFollows.cs" />
+     <Compile Include="Assets\Scripts\LookAtCamera.cs" />
      <Compile Include="Assets\Scripts\PlayerMovement.cs" />
      <Compile Include="Assets\Scripts\MainMenu\ClickPlay.cs" />
+     <Compile Include="Assets\Scripts\EnemySpawner.cs" />
      <Compile Include="Assets\Scripts\MainMenu\ClickQuit.cs" />
      <Compile Include="Assets\VoxelAnimals\Assets\Scripts\PlayerController.cs" />
      <Compile Include="Assets\Scripts\EnemyRandomMovment.cs" />

@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Diamond : MonoBehaviour
+public class  CollectableFlowers: MonoBehaviour
 {
     [SerializeField] private Vector3 rotationAngle;
     [SerializeField] private float rotationSpeed;
